@@ -13,21 +13,20 @@ namespace CO3015_Assignment3.Utility
 
         public static bool IsLoginRequired(IWebDriver driver)
         {
-            driver.Navigate().GoToUrl("https://softtesting.gnomio.com/my/");
+            driver.Navigate().GoToUrl("https://school.moodledemo.net/my/");
             Thread.Sleep(2000);
 
-            return driver.FindElements(By.XPath("//a[@href='https://softtesting.gnomio.com/login/index.php']")).Any();
+            return driver.FindElements(By.XPath("//a[@href='https://school.moodledemo.net/login/index.php']")).Any();
         }
 
         public static void Login(IWebDriver driver)
         {
-            driver.Navigate().GoToUrl("https://softtesting.gnomio.com/my/");
+            driver.Navigate().GoToUrl("https://school.moodledemo.net/login/index.php");
             Thread.Sleep(2000);
 
             driver.FindElement(By.Id("username")).SendKeys(UserName);
             driver.FindElement(By.Id("password")).SendKeys(Password);
             Thread.Sleep(2000);
-
             driver.FindElement(By.Id("loginbtn")).Click();
             Thread.Sleep(2000);
         }

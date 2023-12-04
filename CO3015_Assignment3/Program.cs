@@ -4,11 +4,9 @@
     {
         public static void Main(string[] args)
         {
-            B06BlockUser driverB06 = new B06BlockUser();
-            driverB06.RunTest();
+            B3BlockUser driverB3 = new B3BlockUser();
+            driverB3.RunTest();
 
-            B05AddCalendarEvent driverB05 = new B05AddCalendarEvent();
-            driverB05.RunTest();
         }
     }
 }

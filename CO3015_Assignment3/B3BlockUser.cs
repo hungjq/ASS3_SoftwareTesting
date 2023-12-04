@@ -5,9 +5,9 @@ using OpenQA.Selenium.Chrome;
 
 namespace CO3015_Assignment3
 {
-    public class B06BlockUser
+    public class B3BlockUser
     {
-        public B06BlockUser()
+        public B3BlockUser()
         {
             // Define License Context for EPPlus package
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
@@ -15,15 +15,15 @@ namespace CO3015_Assignment3
 
         public void RunTest()
         {
-            TcB0601();
-            TcB0602();
-            TcB0603();
-            TcB0604();
+            TestB301();
+            TestB302();
+            TestB303();
+            TestB304();
         }
 
         private static void RecoverBlockedUser(IWebDriver driver)
         {
-            var targetId = TestingHelper.GetCellDataFromExcelFile("B06_data.xlsx", "B3");
+            var targetId = TestingHelper.GetCellDataFromExcelFile("B3_data.xlsx", "B3");
 
             if (string.IsNullOrEmpty(targetId))
             {
@@ -66,23 +66,22 @@ namespace CO3015_Assignment3
             Console.WriteLine("Restoration finished");
         }
 
-        /// <summary>
+
         /// Test case for Block admin
-        /// </summary>
-        public void TcB0601()
+        public void TestB301()
         {
             IWebDriver driver = new ChromeDriver();
 
             try
             {
-                var targetId = TestingHelper.GetCellDataFromExcelFile("B06_data.xlsx", "B2");
+                var targetId = TestingHelper.GetCellDataFromExcelFile("B3_data.xlsx", "B2");
 
                 if (string.IsNullOrEmpty(targetId))
                 {
                     throw new NullReferenceException("Null Target Id");
                 }
 
-                Console.WriteLine($"Test case {nameof(TcB0601)} started");
+                Console.WriteLine($"Test case {nameof(TestB301)} started");
 
                 TestingHelper.Login(driver);
 
@@ -105,12 +104,13 @@ namespace CO3015_Assignment3
                 driver.FindElement(By.XPath("//button[contains(@data-action, 'okay-confirm')]")).Click();
                 Thread.Sleep(2000);
 
-                Console.WriteLine($"Test case {nameof(TcB0601)} executed successfully");
+                Console.WriteLine($"Test case {nameof(TestB301)}: PASSED");
+                
             }
             catch (Exception e)
             {
-                Console.WriteLine($"{nameof(TcB0601)}: {e.Message}");
-                Console.WriteLine($"Test case {nameof(TcB0601)} failed");
+                Console.WriteLine($"{nameof(TestB301)}: {e.Message}");
+                Console.WriteLine($"Test case {nameof(TestB301)}: FAILED");
             }
             finally
             {
@@ -122,14 +122,14 @@ namespace CO3015_Assignment3
         /// <summary>
         /// Test case for Cancel blocking
         /// </summary>
-        public void TcB0602()
+        public void TestB302()
         {
             IWebDriver driver = new ChromeDriver();
             RecoverBlockedUser(driver);
 
             try
             {
-                Console.WriteLine($"Test case {nameof(TcB0602)} started");
+                Console.WriteLine($"Test case {nameof(TestB302)} started");
 
                 driver.FindElement(By.Id("conversation-actions-menu-button")).Click();
                 Thread.Sleep(2000);
@@ -140,12 +140,12 @@ namespace CO3015_Assignment3
                 driver.FindElement(By.XPath("//button[contains(@data-action, 'cancel-confirm')]")).Click();
                 Thread.Sleep(2000);
 
-                Console.WriteLine($"Test case {nameof(TcB0602)} executed successfully");
+                Console.WriteLine($"Test case {nameof(TestB302)}: PASSED");
             }
             catch (Exception e)
             {
-                Console.WriteLine($"{nameof(TcB0602)}: {e.Message}");
-                Console.WriteLine($"Test case {nameof(TcB0602)} failed");
+                Console.WriteLine($"{nameof(TestB302)}: {e.Message}");
+                Console.WriteLine($"Test case {nameof(TestB302)}: FAILED");
             }
             finally
             {
@@ -157,14 +157,14 @@ namespace CO3015_Assignment3
         /// <summary>
         /// Test case for Attempt to block a blocked user
         /// </summary>
-        public void TcB0603()
+        public void TestB303()
         {
             IWebDriver driver = new ChromeDriver();
             RecoverBlockedUser(driver);
 
             try
             {
-                Console.WriteLine($"Test case {nameof(TcB0603)} started");
+                Console.WriteLine($"Test case {nameof(TestB303)} started");
 
                 driver.FindElement(By.Id("conversation-actions-menu-button")).Click();
                 Thread.Sleep(2000);
@@ -178,12 +178,12 @@ namespace CO3015_Assignment3
                 driver.FindElement(By.Id("conversation-actions-menu-button")).Click();
                 Thread.Sleep(2000);
 
-                Console.WriteLine($"Test case {nameof(TcB0603)} executed successfully");
+                Console.WriteLine($"Test case {nameof(TestB303)}: PASSED");
             }
             catch (Exception e)
             {
-                Console.WriteLine($"{nameof(TcB0603)}: {e.Message}");
-                Console.WriteLine($"Test case {nameof(TcB0603)} failed");
+                Console.WriteLine($"{nameof(TestB303)}: {e.Message}");
+                Console.WriteLine($"Test case {nameof(TestB303)}: FAILED");
             }
             finally
             {
@@ -195,14 +195,14 @@ namespace CO3015_Assignment3
         /// <summary>
         /// Test case for Block user successfully
         /// </summary>
-        public void TcB0604()
+        public void TestB304()
         {
             IWebDriver driver = new ChromeDriver();
             RecoverBlockedUser(driver);
 
             try
             {
-                Console.WriteLine($"Test case {nameof(TcB0604)} started");
+                Console.WriteLine($"Test case {nameof(TestB304)} started");
 
                 driver.FindElement(By.Id("conversation-actions-menu-button")).Click();
                 Thread.Sleep(2000);
@@ -213,12 +213,12 @@ namespace CO3015_Assignment3
                 driver.FindElement(By.XPath("//button[contains(@data-action, 'confirm-block')]")).Click();
                 Thread.Sleep(2000);
 
-                Console.WriteLine($"Test case {nameof(TcB0604)} executed successfully");
+                Console.WriteLine($"Test case {nameof(TestB304)}: PASSED");
             }
             catch (Exception e)
             {
-                Console.WriteLine($"{nameof(TcB0604)}: {e.Message}");
-                Console.WriteLine($"Test case {nameof(TcB0604)} failed");
+                Console.WriteLine($"{nameof(TestB304)}: {e.Message}");
+                Console.WriteLine($"Test case {nameof(TestB304)}: FAILED");
             }
             finally
             {

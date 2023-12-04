@@ -1,6 +1,0 @@
-﻿<configuration>
-	<appSettings>
-		<add key="username" value="{YOUR_USERNAME}" />
-		<add key="password" value="{YOUR_PASSWORD}" />
-	</appSettings>
-</configuration>
