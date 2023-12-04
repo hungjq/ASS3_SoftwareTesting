@@ -14,20 +14,30 @@ namespace CO3015_Assignment3
         }
 
         public void RunTest()
-        {
-            TestB301();
+        {   
+            //LV0: MANUAL
+/*            TestB301();
             TestB302();
             TestB303();
             TestB304();
+*/
+            //LV1: DATA DRIVEN
+            TestB311();
+            TestB312();
+            TestB313();
+            TestB314();
         }
 
-        private static void RecoverBlockedUser(IWebDriver driver)
+        private static void RecoverBlockedUser(IWebDriver driver, string targetId = null)
         {
-            var targetId = TestingHelper.GetCellDataFromExcelFile("B3_data.xlsx", "B3");
-
             if (string.IsNullOrEmpty(targetId))
             {
-                throw new NullReferenceException("Null Target Id");
+                targetId = TestingHelper.GetCellDataFromExcelFile("B3_data.xlsx", "B3");
+
+                if (string.IsNullOrEmpty(targetId))
+                {
+                    throw new NullReferenceException("Null Target Id");
+                }
             }
 
             TestingHelper.Login(driver);
@@ -67,6 +77,9 @@ namespace CO3015_Assignment3
         }
 
 
+        //LV0: MANUAL
+
+        // Test case for Block admin
         /// Test case for Block admin
         public void TestB301()
         {
@@ -74,12 +87,8 @@ namespace CO3015_Assignment3
 
             try
             {
-                var targetId = TestingHelper.GetCellDataFromExcelFile("B3_data.xlsx", "B2");
-
-                if (string.IsNullOrEmpty(targetId))
-                {
-                    throw new NullReferenceException("Null Target Id");
-                }
+                // Hardcoded values for demonstration, replace with actual values as needed
+                var targetId = "13";
 
                 Console.WriteLine($"Test case {nameof(TestB301)} started");
 
@@ -105,7 +114,7 @@ namespace CO3015_Assignment3
                 Thread.Sleep(2000);
 
                 Console.WriteLine($"Test case {nameof(TestB301)}: PASSED");
-                
+
             }
             catch (Exception e)
             {
@@ -125,7 +134,8 @@ namespace CO3015_Assignment3
         public void TestB302()
         {
             IWebDriver driver = new ChromeDriver();
-            RecoverBlockedUser(driver);
+            var targetId = "47";
+            RecoverBlockedUser(driver, targetId);
 
             try
             {
@@ -160,7 +170,8 @@ namespace CO3015_Assignment3
         public void TestB303()
         {
             IWebDriver driver = new ChromeDriver();
-            RecoverBlockedUser(driver);
+            var targetId = "47"; // Hardcoded value for demonstration
+            RecoverBlockedUser(driver, targetId);
 
             try
             {
@@ -198,7 +209,8 @@ namespace CO3015_Assignment3
         public void TestB304()
         {
             IWebDriver driver = new ChromeDriver();
-            RecoverBlockedUser(driver);
+            string targetId = "47"; 
+            RecoverBlockedUser(driver, targetId);
 
             try
             {
@@ -219,6 +231,168 @@ namespace CO3015_Assignment3
             {
                 Console.WriteLine($"{nameof(TestB304)}: {e.Message}");
                 Console.WriteLine($"Test case {nameof(TestB304)}: FAILED");
+            }
+            finally
+            {
+                driver.Close();
+                Console.WriteLine("==========================================================");
+            }
+        }
+
+        //LV1: DATA DRIVEN
+
+        /// Test case for Block admin
+        public void TestB311()
+        {
+            IWebDriver driver = new ChromeDriver();
+
+            try
+            {
+                var targetId = TestingHelper.GetCellDataFromExcelFile("B3_data.xlsx", "B2");
+
+                if (string.IsNullOrEmpty(targetId))
+                {
+                    throw new NullReferenceException("Null Target Id");
+                }
+
+                Console.WriteLine($"Test case {nameof(TestB311)} started");
+
+                TestingHelper.Login(driver);
+
+                driver.FindElement(By.XPath("//a[contains(@id, 'message-drawer-toggle')]")).Click();
+                Thread.Sleep(2000);
+
+                driver.FindElement(By.XPath("//button[contains(@aria-controls, 'view-overview-messages-target')]"))
+                    .Click();
+                Thread.Sleep(2000);
+
+                driver.FindElement(By.XPath($"//a[contains(@data-user-id, '{targetId}')]")).Click();
+                Thread.Sleep(2000);
+
+                driver.FindElement(By.Id("conversation-actions-menu-button")).Click();
+                Thread.Sleep(2000);
+
+                driver.FindElement(By.LinkText("Block user")).Click();
+                Thread.Sleep(2000);
+
+                driver.FindElement(By.XPath("//button[contains(@data-action, 'okay-confirm')]")).Click();
+                Thread.Sleep(2000);
+
+                Console.WriteLine($"Test case {nameof(TestB311)}: PASSED");
+                
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"{nameof(TestB311)}: {e.Message}");
+                Console.WriteLine($"Test case {nameof(TestB311)}: FAILED");
+            }
+            finally
+            {
+                driver.Close();
+                Console.WriteLine("==========================================================");
+            }
+        }
+
+        /// <summary>
+        /// Test case for Cancel blocking
+        /// </summary>
+        public void TestB312()
+        {
+            IWebDriver driver = new ChromeDriver();
+            RecoverBlockedUser(driver);
+
+            try
+            {
+                Console.WriteLine($"Test case {nameof(TestB312)} started");
+
+                driver.FindElement(By.Id("conversation-actions-menu-button")).Click();
+                Thread.Sleep(2000);
+
+                driver.FindElement(By.LinkText("Block user")).Click();
+                Thread.Sleep(2000);
+
+                driver.FindElement(By.XPath("//button[contains(@data-action, 'cancel-confirm')]")).Click();
+                Thread.Sleep(2000);
+
+                Console.WriteLine($"Test case {nameof(TestB312)}: PASSED");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"{nameof(TestB312)}: {e.Message}");
+                Console.WriteLine($"Test case {nameof(TestB312)}: FAILED");
+            }
+            finally
+            {
+                driver.Close();
+                Console.WriteLine("==========================================================");
+            }
+        }
+
+        /// <summary>
+        /// Test case for Attempt to block a blocked user
+        /// </summary>
+        public void TestB313()
+        {
+            IWebDriver driver = new ChromeDriver();
+            RecoverBlockedUser(driver);
+
+            try
+            {
+                Console.WriteLine($"Test case {nameof(TestB313)} started");
+
+                driver.FindElement(By.Id("conversation-actions-menu-button")).Click();
+                Thread.Sleep(2000);
+
+                driver.FindElement(By.LinkText("Block user")).Click();
+                Thread.Sleep(2000);
+
+                driver.FindElement(By.XPath("//button[contains(@data-action, 'confirm-block')]")).Click();
+                Thread.Sleep(2000);
+
+                driver.FindElement(By.Id("conversation-actions-menu-button")).Click();
+                Thread.Sleep(2000);
+
+                Console.WriteLine($"Test case {nameof(TestB313)}: PASSED");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"{nameof(TestB313)}: {e.Message}");
+                Console.WriteLine($"Test case {nameof(TestB313)}: FAILED");
+            }
+            finally
+            {
+                driver.Close();
+                Console.WriteLine("==========================================================");
+            }
+        }
+
+        /// <summary>
+        /// Test case for Block user successfully
+        /// </summary>
+        public void TestB314()
+        {
+            IWebDriver driver = new ChromeDriver();
+            RecoverBlockedUser(driver);
+
+            try
+            {
+                Console.WriteLine($"Test case {nameof(TestB314)} started");
+
+                driver.FindElement(By.Id("conversation-actions-menu-button")).Click();
+                Thread.Sleep(2000);
+
+                driver.FindElement(By.LinkText("Block user")).Click();
+                Thread.Sleep(2000);
+
+                driver.FindElement(By.XPath("//button[contains(@data-action, 'confirm-block')]")).Click();
+                Thread.Sleep(2000);
+
+                Console.WriteLine($"Test case {nameof(TestB314)}: PASSED");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"{nameof(TestB314)}: {e.Message}");
+                Console.WriteLine($"Test case {nameof(TestB314)}: FAILED");
             }
             finally
             {
