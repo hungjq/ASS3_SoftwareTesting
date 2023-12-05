@@ -14,13 +14,13 @@ namespace CO3015_Assignment3
         }
 
         public void RunTest()
-        {   
+        {
             //LV0: MANUAL
-/*            TestB301();
-            TestB302();
-            TestB303();
-            TestB304();
-*/
+            /*            TestB301();
+                        TestB302();
+                        TestB303();
+                        TestB304();
+            */
             //LV1: DATA DRIVEN
             TestB311();
             TestB312();
