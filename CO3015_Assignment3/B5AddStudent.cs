@@ -30,12 +30,6 @@ namespace CO3015_Assignment3
 
             try
             {
-                var targetId = TestingHelper.GetCellDataFromExcelFile("B3_data.xlsx", "B2");
-
-                if (string.IsNullOrEmpty(targetId))
-                {
-                    throw new NullReferenceException("Null Target Id");
-                }
 
                 Console.WriteLine($"Test case {nameof(TestB501)} started");
 
