@@ -6,8 +6,9 @@ namespace CO3015_Assignment3.Utility
 {
     public class TestingHelper
     {
-        private static readonly string? UserName = ConfigurationManager.AppSettings["username"];
-        private static readonly string? Password = ConfigurationManager.AppSettings["password"];
+        private static readonly string UserName = ConfigurationManager.AppSettings["username"] ?? "teacher";
+        private static readonly string Password = ConfigurationManager.AppSettings["password"] ?? "moodle";
+
         private static readonly string? ProjectDirectory
             = Directory.GetParent(Environment.CurrentDirectory)?.Parent?.Parent?.FullName;
 
