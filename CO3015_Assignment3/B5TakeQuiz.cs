@@ -102,20 +102,20 @@ namespace CO3015_Assignment3
 
                 // sleep for 2 seconds
                 Thread.Sleep(2000);
-
                 driver.FindElement(By.XPath("//span[3]")).Click();
+                Thread.Sleep(1000);
                 driver.FindElement(By.CssSelector(".modtype_quiz .aalink")).Click();
                 Thread.Sleep(1000);
                 driver.FindElement(By.XPath("//form/button")).Click();
                 Thread.Sleep(1000);
                 driver.FindElement(By.Id("id_submitbutton")).Click();
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 driver.FindElement(By.XPath("//div[3]/input[2]")).Click();
                 Thread.Sleep(1000);
                 driver.FindElement(By.XPath("//div[3]/div[2]/div/fieldset/div/div[2]/input")).Click();
                 Thread.Sleep(1000);
 
-                driver.FindElement(By.LinkText("Back")).Click();
+                driver.FindElement(By.XPath("//section[@id='region-main']/div[2]/div/div/div/a")).Click();
                 Thread.Sleep(1000);
                 driver.FindElement(By.XPath("//form/button")).Click();
                 Thread.Sleep(1000);

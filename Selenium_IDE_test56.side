@@ -1,0 +1,1797 @@
+{
+  "id": "d19825b9-ccda-41d6-a417-d844c7e41c8d",
+  "version": "2.0",
+  "name": "Add Student",
+  "url": "https://school.moodledemo.net",
+  "tests": [{
+    "id": "c62d9171-7404-4201-8189-5382be6430e5",
+    "name": "Add Student as admin",
+    "commands": [{
+      "id": "ecf386ef-fb36-4346-bb58-b9f320946a4b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44688eb3-d057-480e-a4f9-8aa228699222",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "902x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4704c35-a97e-4e5a-b424-da579a6ae5b5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b3740fa-b8b9-408e-8b5c-dc23a9bdbbfc",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "469c56a9-523f-47ab-82a0-49b316e3d09c",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d7ef0fe-3ffd-4abf-b03d-843c27f31362",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1702032147623_28']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "moodle"
+    }, {
+      "id": "eb998852-2f2c-4788-855c-c8586c39c436",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1702032147623_28']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "22ba6301-d3d5-408c-bcef-ee4f38a8fbe0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-text",
+      "targets": [
+        ["css=.card-text", "css:finder"],
+        ["xpath=//section[@id='inst472']/div/div", "xpath:idRelative"],
+        ["xpath=//section/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c14dfbb3-3539-40e7-9c29-58376b1ffe41",
+      "comment": "",
+      "command": "click",
+      "target": "css=.multiline",
+      "targets": [
+        ["css=.multiline", "css:finder"],
+        ["xpath=//div[@id='course-info-container-27-4']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a42f422-9897-4787-885a-2247ac77d780",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Participants",
+      "targets": [
+        ["linkText=Participants", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Participants')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-6572f320182e9-nav-tabs']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/user/index.php?id=27')]", "xpath:href"],
+        ["xpath=//nav/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Participants')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22e68554-74c5-44dc-8f12-befbf99d76bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#enrolusersbutton-1 .btn",
+      "targets": [
+        ["css=#enrolusersbutton-1 .btn", "css:finder"],
+        ["xpath=//input[@value='Enrol users']", "xpath:attributes"],
+        ["xpath=//form[@id='enrolusersbutton-1']/div/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73119c82-799b-4086-a240-61f811e1a22d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='fitem_id_userlist']/div[2]/div[3]/span",
+      "targets": [
+        ["id=form_autocomplete_downarrow-1702032163055", "id"],
+        ["css=#form_autocomplete_downarrow-1702032163055", "css:finder"],
+        ["xpath=//span[@id='form_autocomplete_downarrow-1702032163055']", "xpath:attributes"],
+        ["xpath=//div[@id='fitem_id_userlist']/div[2]/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'▼')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85293ae6-bb59-4bf6-ba05-988924bdb7c8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li/span/span",
+      "targets": [
+        ["css=#form_autocomplete_suggestions-1702032163055-0 span:nth-child(2)", "css:finder"],
+        ["xpath=//li[@id='form_autocomplete_suggestions-1702032163055-0']/span/span", "xpath:idRelative"],
+        ["xpath=//li/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81ef7e07-3fcd-4de2-8af0-2609250ed34d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Enrol selected users and cohorts')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1702032162647_560", "id"],
+        ["css=#yui_3_18_1_1_1702032162647_560", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1702032162647_560']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1702032162647_561']/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Enrol selected users and cohorts')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9bed54b4-ca3a-4204-b240-db9c32a29f31",
+    "name": "Take quiz testcase 1",
+    "commands": [{
+      "id": "313a9a17-30f4-4491-b3b5-d8fd2b3b87c9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a308a0f0-91b9-47ed-87d2-01c191b4ad68",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "902x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1584c8a0-e76d-41bf-9cad-58b706b3b01a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bd2b7c9-4d03-457c-8823-055b70aa0e66",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0922d907-672b-48e7-8baf-322dcf87f571",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "moodle"
+    }, {
+      "id": "d6201658-b69f-4e72-9e03-4a24df4ed9f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b56c4f7-c5a4-4c36-b2d0-8a853eb73d88",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[3]",
+      "targets": [
+        ["css=#course-info-container-69-4 .multiline", "css:finder"],
+        ["xpath=//div[@id='course-info-container-69-4']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b163cd6d-dd49-484e-8766-4c62e34ad674",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_quiz .aalink",
+      "targets": [
+        ["css=.modtype_quiz .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[15]", "xpath:attributes"],
+        ["xpath=//li[@id='module-978']/div/div[2]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://school.moodledemo.net/mod/quiz/view.php?id=978')])[3]", "xpath:href"],
+        ["xpath=//li[4]/div[2]/ul/li/div/div[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68bf1b03-2992-463e-a13f-312b4c1bef67",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Re-attempt quiz')]",
+      "targets": [
+        ["id=single_button65740efbc09c87", "id"],
+        ["css=#single_button65740efbc09c87", "css:finder"],
+        ["xpath=//button[@id='single_button65740efbc09c87']", "xpath:attributes"],
+        ["xpath=//form[@id='yui_3_18_1_1_1702104828332_224']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Re-attempt quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9d62c25-0de1-441e-a9dd-0398acd51dbc",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1702104828332_293']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62fa8f36-bbcd-4599-b151-f4bb6daa9b06",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/input[2]",
+      "targets": [
+        ["id=q112:1_choice2", "id"],
+        ["css=#q112\\3A 1_choice2", "css:finder"],
+        ["xpath=//input[@id='q112:1_choice2']", "xpath:attributes"],
+        ["xpath=//div[@id='question-112-1']/div[2]/div/fieldset/div/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0720ba4-0288-4a79-9f0d-bb95b886f526",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/div[2]/div/fieldset/div/div[2]/input",
+      "targets": [
+        ["id=q112:3_answer1", "id"],
+        ["css=#q112\\3A 3_answer1", "css:finder"],
+        ["xpath=//input[@id='q112:3_answer1']", "xpath:attributes"],
+        ["xpath=//div[@id='question-112-3']/div[2]/div/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf99d2ae-c7d1-4981-b260-43ce3e5f3ff5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[4]/div[2]/div/fieldset/div/div[3]/input[2]",
+      "targets": [
+        ["id=q112:4_choice2", "id"],
+        ["css=#q112\\3A 4_choice2", "css:finder"],
+        ["xpath=//input[@id='q112:4_choice2']", "xpath:attributes"],
+        ["xpath=//div[@id='question-112-4']/div[2]/div/fieldset/div/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/fieldset/div/div[3]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7165c734-0a2f-43b8-8380-8bcc59ebb72f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[5]/div[2]/div/fieldset/div/div[4]/input",
+      "targets": [
+        ["id=q112:5_answer3", "id"],
+        ["css=#q112\\3A 5_answer3", "css:finder"],
+        ["xpath=//input[@id='q112:5_answer3']", "xpath:attributes"],
+        ["xpath=//div[@id='question-112-5']/div[2]/div/fieldset/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/fieldset/div/div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e9c5117-ae2a-4a73-a88d-5bf6d65d5e03",
+      "comment": "",
+      "command": "click",
+      "target": "id=mod_quiz-next-nav",
+      "targets": [
+        ["id=mod_quiz-next-nav", "id"],
+        ["name=next", "name"],
+        ["css=#mod_quiz-next-nav", "css:finder"],
+        ["xpath=//input[@id='mod_quiz-next-nav']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1702104833612_144']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e72477cc-4a3d-4aaa-9dcc-50177338e2a0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Submit all and finish')]",
+      "targets": [
+        ["id=single_button65740f1b3d1da10", "id"],
+        ["css=#single_button65740f1b3d1da10", "css:finder"],
+        ["xpath=//button[@id='single_button65740f1b3d1da10']", "xpath:attributes"],
+        ["xpath=//form[@id='frm-finishattempt']/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit all and finish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb764965-99d3-4387-a35f-9dfb12b27ff0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//button[contains(.,'Submit all and finish')]",
+      "targets": [
+        ["id=single_button65740f1b3d1da10", "id"],
+        ["css=#single_button65740f1b3d1da10", "css:finder"],
+        ["xpath=//button[@id='single_button65740f1b3d1da10']", "xpath:attributes"],
+        ["xpath=//form[@id='frm-finishattempt']/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit all and finish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a88609c5-84e2-40dc-9073-75252dcaf2c8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=//form[@id='frm-finishattempt']/button",
+      "targets": [
+        ["id=single_button65740f1b3d1da10", "id"],
+        ["css=#single_button65740f1b3d1da10", "css:finder"],
+        ["xpath=//button[@id='single_button65740f1b3d1da10']", "xpath:attributes"],
+        ["xpath=//form[@id='frm-finishattempt']/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit all and finish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cd80dff-9792-488d-87bf-f610faa99ce9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer > .btn-primary",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//body[@id='page-mod-quiz-summary']/div[5]/div[2]/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dac64f7b-097f-4d1f-8157-2024500a4e95",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1104)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "010e1aec-9bcb-4566-a5a5-3ce9b0c909f8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1827.199951171875)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "03cd7ad1-204a-44f7-b465-9fce44d075de",
+    "name": "Take quiz testcase 2",
+    "commands": [{
+      "id": "6a89da50-952e-48b0-9216-8454650be890",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d9b94d7-be4b-4045-b13e-622eb6a6ac54",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "902x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91b81145-5a03-4e44-ad10-a9e0c5bd48f7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0702646c-66d2-41b5-a989-a46e5afe4b45",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2f2800e-d723-40ff-8613-46d587693d87",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "moodle"
+    }, {
+      "id": "8f2595b2-7b1a-4602-ba38-79a28c6aaa81",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4b1a1e9-a398-4515-b42e-bf6c9b7544cb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[3]",
+      "targets": [
+        ["css=#course-info-container-69-4 .multiline", "css:finder"],
+        ["xpath=//div[@id='course-info-container-69-4']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c190c786-5f93-40b8-999c-fed9a234857d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_quiz .aalink",
+      "targets": [
+        ["css=.modtype_quiz .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[15]", "xpath:attributes"],
+        ["xpath=//li[@id='module-978']/div/div[2]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://school.moodledemo.net/mod/quiz/view.php?id=978')])[3]", "xpath:href"],
+        ["xpath=//li[4]/div[2]/ul/li/div/div[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f84e68cb-f19b-449e-b7f7-ad6bfe98b221",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/button",
+      "targets": [
+        ["id=single_button65740efbc09c87", "id"],
+        ["css=#single_button65740efbc09c87", "css:finder"],
+        ["xpath=//button[@id='single_button65740efbc09c87']", "xpath:attributes"],
+        ["xpath=//form[@id='yui_3_18_1_1_1702104828332_224']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Re-attempt quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78272276-a47d-491f-a115-8c5d3c4f52b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#q101\\3A 1_answer0",
+      "targets": [
+        ["id=q101:1_answer0", "id"],
+        ["name=q101:1_answer", "name"],
+        ["css=#q101\\3A 1_answer0", "css:finder"],
+        ["xpath=//input[@id='q101:1_answer0']", "xpath:attributes"],
+        ["xpath=//div[@id='question-101-1']/div[2]/div/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be9a2bc1-9dec-4f40-b498-79c32136865c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//section[@id='region-main']/div[2]/div/div/div/a",
+      "targets": [
+        ["linkText=Back", "linkText"],
+        ["css=.btn-secondary:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Back')])[2]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://school.moodledemo.net/mod/quiz/view.php?id=52')])[4]", "xpath:href"],
+        ["xpath=//section/div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "150a9199-67e3-460e-9e36-f7221c534863",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//section[@id='region-main']/div[2]/div/div/div/form/button",
+      "targets": [
+        ["id=single_button65741434da4a110", "id"],
+        ["css=#single_button65741434da4a110", "css:finder"],
+        ["xpath=//button[@id='single_button65741434da4a110']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue the last preview')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2df87f9-6202-4990-934f-171b065862d8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/div[2]/div/fieldset/div/div[2]/input",
+      "targets": [
+        ["id=q112:3_answer1", "id"],
+        ["css=#q112\\3A 3_answer1", "css:finder"],
+        ["xpath=//input[@id='q112:3_answer1']", "xpath:attributes"],
+        ["xpath=//div[@id='question-112-3']/div[2]/div/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d04da2b-af68-4d0e-b77f-f2341a6f8c44",
+      "comment": "",
+      "command": "click",
+      "target": "id=mod_quiz-next-nav",
+      "targets": [
+        ["id=mod_quiz-next-nav", "id"],
+        ["name=next", "name"],
+        ["css=#mod_quiz-next-nav", "css:finder"],
+        ["xpath=//input[@id='mod_quiz-next-nav']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1702104833612_144']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1f4340f-4c8b-4667-af5a-154cffc4ccb2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Submit all and finish')]",
+      "targets": [
+        ["id=single_button65740f1b3d1da10", "id"],
+        ["css=#single_button65740f1b3d1da10", "css:finder"],
+        ["xpath=//button[@id='single_button65740f1b3d1da10']", "xpath:attributes"],
+        ["xpath=//form[@id='frm-finishattempt']/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit all and finish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42f82278-922e-494d-ab89-fa2df14c66b3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//button[contains(.,'Submit all and finish')]",
+      "targets": [
+        ["id=single_button65740f1b3d1da10", "id"],
+        ["css=#single_button65740f1b3d1da10", "css:finder"],
+        ["xpath=//button[@id='single_button65740f1b3d1da10']", "xpath:attributes"],
+        ["xpath=//form[@id='frm-finishattempt']/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit all and finish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1a9787c-1085-45d0-8b3e-0db7a1f3a4dd",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=//form[@id='frm-finishattempt']/button",
+      "targets": [
+        ["id=single_button65740f1b3d1da10", "id"],
+        ["css=#single_button65740f1b3d1da10", "css:finder"],
+        ["xpath=//button[@id='single_button65740f1b3d1da10']", "xpath:attributes"],
+        ["xpath=//form[@id='frm-finishattempt']/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit all and finish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccba42be-0ce0-4deb-a129-2233173a23ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer > .btn-primary",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//body[@id='page-mod-quiz-summary']/div[5]/div[2]/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6b494df-e038-4f67-b1d0-f197df6d2393",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1104)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2aba6d4d-23df-4ccf-82b2-8131859df32a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1827.199951171875)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0e1c9b9f-50fa-40f3-961a-6e4534c43278",
+    "name": "Take quiz testcase 3",
+    "commands": [{
+      "id": "344c56d8-a2f8-419e-8ef6-1f57eb5a5994",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "421c0f45-9b73-4b2e-9294-5674e372fd04",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "904x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75fd8ab6-e6af-45ee-b3b0-5fdd9a394ce7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a30e5f7-d909-416c-b200-d7e89cffe53f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "moodle"
+    }, {
+      "id": "8331aeec-5735-49f4-8da4-276dc9126f25",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-wrapper",
+      "targets": [
+        ["css=.login-wrapper", "css:finder"],
+        ["xpath=//section[@id='region-main']/div", "xpath:idRelative"],
+        ["xpath=//section/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08fe0f89-e16a-436b-9e99-191fdad228b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fc76687-ebab-45f5-9151-6f21b4e19335",
+      "comment": "",
+      "command": "click",
+      "target": "css=.multiline",
+      "targets": [
+        ["css=.multiline", "css:finder"],
+        ["xpath=//div[@id='course-info-container-27-4']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a369159-64ed-4ef4-9719-011a1e199f3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_quiz .aalink",
+      "targets": [
+        ["css=.modtype_quiz .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[4]", "xpath:attributes"],
+        ["xpath=//li[@id='module-52']/div/div[2]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://school.moodledemo.net/mod/quiz/view.php?id=52')])[3]", "xpath:href"],
+        ["xpath=//li[3]/div/div[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21ed1629-d228-49fc-8ae5-1a217a2429e4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Settings')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1702106847158_183", "id"],
+        ["linkText=Settings", "linkText"],
+        ["css=#yui_3_18_1_1_1702106847158_183", "css:finder"],
+        ["xpath=//a[contains(text(),'Settings')]", "xpath:link"],
+        ["xpath=//a[@id='yui_3_18_1_1_1702106847158_183']", "xpath:attributes"],
+        ["xpath=//li[@id='yui_3_18_1_1_1702106847158_184']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/course/modedit.php?update=52&return=1')]", "xpath:href"],
+        ["xpath=//div[2]/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e86411ad-3346-4188-a7b2-5139482b5338",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,238.39999389648438)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "614e0771-f4b8-45a9-b04d-e1db55dd6262",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,379.20001220703125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e4b5e53-8dd6-42ba-80b2-97a63e198b2c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Timing')]",
+      "targets": [
+        ["id=collapseElement-1", "id"],
+        ["linkText=Timing", "linkText"],
+        ["css=#collapseElement-1", "css:finder"],
+        ["xpath=//a[@id='collapseElement-1']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1702106850220_1217']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#id_timingcontainer')]", "xpath:href"],
+        ["xpath=//fieldset[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Timing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d781ad3-5414-42fe-a888-39cd4d5df60e",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_timelimit_enabled",
+      "targets": [
+        ["id=id_timelimit_enabled", "id"],
+        ["name=timelimit[enabled]", "name"],
+        ["css=#id_timelimit_enabled", "css:finder"],
+        ["xpath=//input[@id='id_timelimit_enabled']", "xpath:attributes"],
+        ["xpath=//label[@id='yui_3_18_1_1_1702106850220_1226']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/fieldset/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef7b212f-6d93-471c-87fd-815f9380e7de",
+      "comment": "",
+      "command": "click",
+      "target": "id=fitem_id_timelimit",
+      "targets": [
+        ["id=fitem_id_timelimit", "id"],
+        ["css=#fitem_id_timelimit", "css:finder"],
+        ["xpath=//div[@id='fitem_id_timelimit']", "xpath:attributes"],
+        ["xpath=//div[@id='id_timingcontainer']/div[3]", "xpath:idRelative"],
+        ["xpath=//fieldset[2]/div[2]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42a9f01b-2a6b-4c67-95c8-246e49a54894",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1702106850220_1242']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "621b3e57-33e4-4053-b189-c933f63862b8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Preview quiz')]",
+      "targets": [
+        ["id=single_button657416f5c54b210", "id"],
+        ["css=#single_button657416f5c54b210", "css:finder"],
+        ["xpath=//button[@id='single_button657416f5c54b210']", "xpath:attributes"],
+        ["xpath=//form[@id='yui_3_18_1_1_1702106870419_186']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Preview quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8d3457e-fd59-40e7-9162-6aa555d2a234",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1702106870419_256']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73ad871a-6adf-4060-9f32-c41d1238c329",
+      "comment": "",
+      "command": "click",
+      "target": "id=q107:1_answer0",
+      "targets": [
+        ["id=q107:1_answer0", "id"],
+        ["name=q107:1_answer", "name"],
+        ["css=#q107\\3A 1_answer0", "css:finder"],
+        ["xpath=//input[@id='q107:1_answer0']", "xpath:attributes"],
+        ["xpath=//div[@id='question-107-1']/div[2]/div/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c7bf4a5-16b5-4869-b224-8715195cc7b0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1443.199951171875)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85235556-ffa8-4098-a6a6-53a9dbe148d3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2620)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b440711-e46e-4a55-a9af-48abcb63eadc",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,3989.60009765625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa7eb986-8f3c-47af-97f4-55657e68e055",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Finish review",
+      "targets": [
+        ["linkText=Finish review", "linkText"],
+        ["css=.submitbtns > .mod_quiz-next-nav", "css:finder"],
+        ["xpath=(//a[contains(text(),'Finish review')])[2]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://school.moodledemo.net/mod/quiz/view.php?id=52')])[5]", "xpath:href"],
+        ["xpath=//section/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2d160c55-cd7a-4ff8-af76-55318e8df8df",
+    "name": "Take quiz testcase 4",
+    "commands": [{
+      "id": "d67a6b85-74af-4f17-bbe8-df1d94a67798",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27d861dc-2052-412e-91f2-95cd32eb4f26",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "902x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe269d2d-e8d1-4fd0-a96b-edce1eb055f0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f98df92e-ac2a-4f1f-8f1b-759d87a18244",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "moodle"
+    }, {
+      "id": "d2369748-f3ce-4bb5-91f8-e48231e3af7c",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b41ee77-4a95-475d-b85c-a93327b4029b",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2a73688-2bad-4334-aff8-4c7cc87ea890",
+      "comment": "",
+      "command": "click",
+      "target": "css=.multiline",
+      "targets": [
+        ["css=.multiline", "css:finder"],
+        ["xpath=//div[@id='course-info-container-27-4']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3e91e93-d42e-4ae5-96d7-5cb387f9fdde",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,47.20000076293945)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12ad4e2c-8854-4772-b680-17dd945a89d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_quiz .aalink",
+      "targets": [
+        ["css=.modtype_quiz .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[4]", "xpath:attributes"],
+        ["xpath=//li[@id='module-52']/div/div[2]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://school.moodledemo.net/mod/quiz/view.php?id=52')])[3]", "xpath:href"],
+        ["xpath=//li[3]/div/div[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfefe212-dc4f-4f91-8c18-a30821fa6149",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/nav/ul/li[2]/a",
+      "targets": [
+        ["linkText=Settings", "linkText"],
+        ["css=#moremenu-6574182f40279-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Settings')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-6574182f40279-nav-tabs']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/course/modedit.php?update=52&return=1')]", "xpath:href"],
+        ["xpath=//div[2]/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2c15cec-af6d-4ebd-8d8d-164e3d2b7e60",
+      "comment": "",
+      "command": "click",
+      "target": "id=collapseElement-1",
+      "targets": [
+        ["id=collapseElement-1", "id"],
+        ["linkText=Timing", "linkText"],
+        ["css=#collapseElement-1", "css:finder"],
+        ["xpath=//a[@id='collapseElement-1']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1702107188479_1210']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#id_timingcontainer')]", "xpath:href"],
+        ["xpath=//fieldset[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Timing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4fea767-8c90-498b-b093-1561baddff13",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,208.8000030517578)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08300728-1670-4930-9a76-e2ee82dfd5b2",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_timeopen_year",
+      "targets": [
+        ["id=id_timeopen_year", "id"],
+        ["name=timeopen[year]", "name"],
+        ["css=#id_timeopen_year", "css:finder"],
+        ["xpath=//select[@id='id_timeopen_year']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1702107188479_1219']/select", "xpath:idRelative"],
+        ["xpath=//div[3]/span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba547d5e-286d-4832-abcf-48a8fd622e95",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_timeopen_year",
+      "targets": [],
+      "value": "label=2042"
+    }, {
+      "id": "0c3c7eb6-fcfc-4b28-a2a2-ad81e3e2cdcb",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1702107188479_1325']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23c99359-0b73-4c3b-9c4b-2bb0ed17fe55",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Preview quiz')]",
+      "targets": [
+        ["id=single_button6574184deeb5d10", "id"],
+        ["css=#single_button6574184deeb5d10", "css:finder"],
+        ["xpath=//button[@id='single_button6574184deeb5d10']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Preview quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f549a6b-5ae5-4ea4-992f-fbcfb5565895",
+      "comment": "",
+      "command": "click",
+      "target": "id=mod_quiz-next-nav",
+      "targets": [
+        ["id=mod_quiz-next-nav", "id"],
+        ["name=next", "name"],
+        ["css=#mod_quiz-next-nav", "css:finder"],
+        ["xpath=//input[@id='mod_quiz-next-nav']", "xpath:attributes"],
+        ["xpath=//form[@id='responseform']/div/div[11]/input", "xpath:idRelative"],
+        ["xpath=//div[11]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84c74ce7-a510-4f55-a9a8-3afbd111ce83",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Submit all and finish')]",
+      "targets": [
+        ["id=single_button657418580ed3012", "id"],
+        ["css=#single_button657418580ed3012", "css:finder"],
+        ["xpath=//button[@id='single_button657418580ed3012']", "xpath:attributes"],
+        ["xpath=//form[@id='frm-finishattempt']/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit all and finish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc5874cb-f5ca-44de-b398-547898b0dab8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-footer > .btn-primary",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//body[@id='page-mod-quiz-summary']/div[5]/div[2]/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "563c7616-ed62-4b71-822a-ceabb91127ce",
+    "name": "Add Discusstion Topic",
+    "commands": [{
+      "id": "1f544eb7-6201-4859-b977-2911eab080ea",
+      "comment": "",
+      "command": "open",
+      "target": "/my/courses.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30f64d0c-abe0-47be-9cb6-0e699c772480",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "902x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1408ecc-e3f6-413b-bc01-45a8ef23caa2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[3]",
+      "targets": [
+        ["css=#course-info-container-69-4 .multiline", "css:finder"],
+        ["xpath=//div[@id='course-info-container-69-4']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d03d652-31ff-47bb-8a02-dfa905c7d1c1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/div[2]/div/div/div/div/a",
+      "targets": [
+        ["css=#module-967 .aalink", "css:finder"],
+        ["xpath=//a[@onclick='']", "xpath:attributes"],
+        ["xpath=//li[@id='module-967']/div/div[2]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://school.moodledemo.net/mod/forum/view.php?id=967')])[3]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74c2a120-1994-414c-b679-ed2eb93abe17",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add discussion topic",
+      "targets": [
+        ["linkText=Add discussion topic", "linkText"],
+        ["css=.navitem > .btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Add discussion topic')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#collapseAddForm')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add discussion topic')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33f9a0f3-112c-44df-95fe-23c8926246c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_subject",
+      "targets": [
+        ["id=id_subject", "id"],
+        ["name=subject", "name"],
+        ["css=#id_subject", "css:finder"],
+        ["xpath=//input[@id='id_subject']", "xpath:attributes"],
+        ["xpath=//div[@id='fitem_id_subject']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17058a3f-af60-486f-845e-e46abd3f7e32",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_subject",
+      "targets": [
+        ["id=id_subject", "id"],
+        ["name=subject", "name"],
+        ["css=#id_subject", "css:finder"],
+        ["xpath=//input[@id='id_subject']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1702111908459_99']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9383dd3c-0aa0-41cd-b30e-c64d75d22b3c",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=id_subject",
+      "targets": [
+        ["id=id_subject", "id"],
+        ["name=subject", "name"],
+        ["css=#id_subject", "css:finder"],
+        ["xpath=//input[@id='id_subject']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1702111908459_99']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87fc0745-d32a-4c7f-99e7-ad0d78d949a6",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_subject",
+      "targets": [
+        ["id=id_subject", "id"],
+        ["name=subject", "name"],
+        ["css=#id_subject", "css:finder"],
+        ["xpath=//input[@id='id_subject']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1702111908459_99']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Normal Topic"
+    }, {
+      "id": "2754f1d4-3542-421b-8062-92d91030f621",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,318.3999938964844)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e5ac4f5-a8dc-45d0-b4ca-22de4c72c5e9",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d210d2a-edc7-4876-a01c-5d6f66434d5f",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=tinymce",
+      "targets": [
+        ["id=tinymce", "id"],
+        ["css=#tinymce", "css:finder"],
+        ["xpath=//body[@id='tinymce']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": "<div class=\"chat-history-scroll-container ng-tns-c1385467139-2 ng-trigger ng-trigger-resetChat show-bottom-shadow\"><div class=\"conversation-container ng-tns-c1385467139-2 narrow-container ng-star-inserted\"><div class=\"ng-tns-c1187250912-40\"><div class=\"response-container ng-tns-c1832212363-41\"><div class=\"presented-response-container ng-tns-c1832212363-41\"><div class=\"response-container-content ng-tns-c1832212363-41\"><div class=\"response-content ng-trigger ng-trigger-responsePopulation ng-tns-c1832212363-41\"><div class=\"markdown markdown-main-panel\" dir=\"ltr\"><p data-sourcepos=\"1:1-1:183\">In Moodle, a discussion topic is a forum thread within a course where students and instructors can engage in asynchronous discussions about a specific topic or question. It allows for deeper exploration of concepts, brainstorming of ideas, and collaborative learning.</p><p data-sourcepos=\"3:1-3:42\">Here's a breakdown of its functionalities:</p><p data-sourcepos=\"5:1-5:12\"><strong>Purpose:</strong></p><ul data-sourcepos=\"7:1-7:25\"><li data-sourcepos=\"7:1-7:25\">Facilitate asynchronous discussions among students and instructors.</li><li data-sourcepos=\"8:1-8:74\">Encourage critical thinking and deeper understanding of course material.</li><li data-sourcepos=\"9:1-9:54\">Promote collaborative learning and peer interaction.</li><li data-sourcepos=\"10:1-10:17\">Provide a space for students to ask questions and seek clarification.</li></ul><p data-sourcepos=\"12:1-12:17\"><strong>Key features:</strong></p><ul data-sourcepos=\"14:1-14:83\"><li data-sourcepos=\"14:1-14:83\"><strong>Forum thread:</strong>&nbsp;Each discussion topic is organized as a thread,&nbsp;where users can post their initial thoughts and reply to others' comments.</li><li data-sourcepos=\"15:1-15:103\"><strong>Threaded replies:</strong>&nbsp;Users can reply directly to specific posts,&nbsp;creating a clear conversation flow.</li><li data-sourcepos=\"16:1-16:154\"><strong>Moderation tools:</strong>&nbsp;Instructors can moderate discussions by deleting inappropriate posts,&nbsp;marking discussions as read,&nbsp;and pinning important messages.</li><li data-sourcepos=\"17:1-17:95\"><strong>Subscription options:</strong>&nbsp;Users can choose to be notified of new posts in a discussion topic.</li><li data-sourcepos=\"18:1-19:0\"><strong>Multiple forum types:</strong>&nbsp;Different forum types are available,&nbsp;such as Standard forums for open discussions,&nbsp;Q&amp;A forums for asking and answering questions,&nbsp;and Single Simple forums for focused discussions on a single topic.</li></ul><p data-sourcepos=\"20:1-20:37\"><strong>Benefits of using discussion topics:</strong></p><ul data-sourcepos=\"22:1-27:0\"><li data-sourcepos=\"22:1-22:144\"><strong>Promotes active learning:</strong>&nbsp;Students are actively engaged in the learning process by contributing to discussions and sharing their thoughts.</li><li data-sourcepos=\"23:1-23:165\"><strong>Enhances understanding:</strong>&nbsp;Discussing concepts with peers can help students solidify their understanding and identify areas where they need further clarification.</li><li data-sourcepos=\"24:1-24:152\"><strong>Develops critical thinking skills:</strong>&nbsp;Students learn to analyze information,&nbsp;form their own opinions,&nbsp;and defend their arguments through discussions.</li><li data-sourcepos=\"25:1-25:168\"><strong>Improves communication skills:</strong>&nbsp;Students practice writing clear and concise messages,&nbsp;and learn to communicate effectively in a respectful and professional manner.</li><li data-sourcepos=\"26:1-27:0\"><strong>Fosters a sense of community:</strong>&nbsp;Discussions can create a sense of community within the course,&nbsp;as students connect with their peers and instructors.</li></ul><p data-sourcepos=\"28:1-28:145\"><strong>Overall, discussion topics are a valuable tool in Moodle that can significantly enhance the learning experience for students and instructors.</strong></p></div><div class=\"response-footer ng-tns-c1187250912-40 gap complete\"><div class=\"sources-list-container\"><br data-mce-bogus=\"1\"></div></div></div></div></div><div class=\"response-container-footer ng-tns-c1832212363-41\"><div class=\"actions-container-v2 ng-star-inserted\"><div class=\"buttons-container-v2 ng-star-inserted\"><button class=\"mat-mdc-tooltip-trigger icon-button mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base gmat-mdc-button ng-star-inserted\" aria-label=\"Good response\" aria-pressed=\"false\" aria-controls=\"feedback-form-3\"></button><button class=\"mat-mdc-tooltip-trigger icon-button mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base gmat-mdc-button ng-star-inserted\" aria-label=\"Bad response\" aria-pressed=\"false\" aria-controls=\"feedback-form-3\"></button><div class=\"menu-button-wrapper\"><button class=\"mat-mdc-menu-trigger mat-mdc-tooltip-trigger icon-button mdc-button mat-mdc-button gmat-mdc-button-with-prefix mat-unthemed mat-mdc-button-base gmat-mdc-button ng-star-inserted\" aria-label=\"Modify response\" aria-haspopup=\"menu\" aria-expanded=\"false\">tune</button><button class=\"mat-mdc-menu-trigger mat-mdc-tooltip-trigger icon-button mdc-button mat-mdc-button gmat-mdc-button-with-prefix mat-unthemed mat-mdc-button-base gmat-mdc-button ng-star-inserted\" aria-label=\"Share &amp; export\" aria-haspopup=\"menu\" aria-expanded=\"false\">share</button></div><div class=\"menu-button-wrapper ng-star-inserted\"><br data-mce-bogus=\"1\"></div><div class=\"menu-button-wrapper ng-star-inserted\"><button class=\"mat-mdc-menu-trigger mat-mdc-tooltip-trigger icon-button mdc-button mat-mdc-button gmat-mdc-button-with-prefix mat-unthemed mat-mdc-button-base gmat-mdc-button\" aria-label=\"Show more options\" aria-haspopup=\"menu\" aria-expanded=\"false\" aria-describedby=\"cdk-describedby-message-ng-1-14\">more_vert</button></div></div></div></div></div><div id=\"feedback-form-3\" class=\"ng-tns-c1187250912-40\"></div><div id=\"factuality-form-3\" class=\"related-search-footer ng-tns-c1187250912-40 complete\"></div></div><div class=\"restart-chat-button-scroll-placeholder ng-tns-c1385467139-2 ng-star-inserted\"><br data-mce-bogus=\"1\"></div></div></div><div class=\"bottom-container ng-tns-c1385467139-2 narrow-container ng-star-inserted\"><div class=\"input-area-container ng-tns-c1385467139-2\"><div class=\"input-area ng-tns-c3294528854-5\" data-node-type=\"input-area\"><div class=\"image-uploader ng-star-inserted\"><button id=\"upload-local-image-button\" class=\"mat-mdc-tooltip-trigger mdc-icon-button mat-mdc-icon-button gmat-mdc-button-with-prefix mat-unthemed mat-mdc-button-base gmat-mdc-button ng-star-inserted\" aria-label=\"[BACKUP_MESSAGE_ID: 4346501862140223347] Open upload image modal\" aria-describedby=\"cdk-describedby-message-ng-1-6\">add_photo_alternate</button><button class=\"hidden-upload-local-image-button ng-star-inserted\" aria-hidden=\"true\" data-mce-tabindex=\"-1\"></button></div><div class=\"text-input-field ng-tns-c3294528854-5 ng-star-inserted\"><div class=\"text-input-field_textarea-wrapper ng-tns-c3294528854-5\"><div class=\"text-input-field-main-area ng-tns-c3294528854-5\"><div class=\"text-input-field_textarea-inner ng-tns-c3294528854-5\"><div class=\"ql-editor textarea ql-blank\" role=\"textbox\" contenteditable=\"true\" data-gramm=\"false\" aria-multiline=\"true\" aria-label=\"Input for prompt text\" data-placeholder=\"Enter a prompt here\"><p><br></p></div><div class=\"ql-clipboard\" contenteditable=\"true\" data-mce-tabindex=\"-1\"><br data-mce-bogus=\"1\"></div></div></div></div><div>mic</div></div><div class=\"send-button-container ng-tns-c3294528854-5 outer ng-star-inserted\"><button class=\"mat-mdc-tooltip-trigger send-button ng-tns-c3294528854-5 mdc-icon-button mat-mdc-icon-button gmat-mdc-button-with-prefix mat-primary mat-mdc-button-base gmat-mdc-button\" aria-label=\"Send message\" aria-disabled=\"true\" aria-describedby=\"cdk-describedby-message-ng-1-8\">send_spark</button></div></div></div><div class=\"capabilities-disclaimer ng-tns-c1385467139-2 ng-star-inserted\"><p class=\"gmat-caption ng-tns-c1385467139-2\">Bard may display inaccurat</p></div></div>"
+    }, {
+      "id": "87a2b249-1741-49b5-bda5-894347792a02",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f9da395-1563-4157-a84d-dc6c39c44bd3",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_buttonar']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "54a815a0-78e4-4f80-b41b-7373bf4ee447",
+    "name": "Add Discusstion Topic2",
+    "commands": [{
+      "id": "55ec246d-1275-4ac8-ae9c-88f5ce95a9d7",
+      "comment": "",
+      "command": "open",
+      "target": "/my/courses.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b872e18d-65b1-40e2-b4c2-d51dea6882a7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "904x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ee824b1-fd73-4371-a72a-032938651727",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-info-container-69-4 .multiline",
+      "targets": [
+        ["css=#course-info-container-69-4 .multiline", "css:finder"],
+        ["xpath=//div[@id='course-info-container-69-4']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8b13f2d-bca5-42fc-84c2-c74294b10243",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,274.3999938964844)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60073623-aa9a-46b0-a07e-b6a89804b208",
+      "comment": "",
+      "command": "click",
+      "target": "css=#module-967 .aalink",
+      "targets": [
+        ["css=#module-967 .aalink", "css:finder"],
+        ["xpath=//a[@onclick='']", "xpath:attributes"],
+        ["xpath=//li[@id='module-967']/div/div[2]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://school.moodledemo.net/mod/forum/view.php?id=967')])[3]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "477664c8-bd36-46e3-8d3e-c396e6843d94",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Add discussion topic",
+      "targets": [
+        ["linkText=Add discussion topic", "linkText"],
+        ["css=.navitem > .btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Add discussion topic')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#collapseAddForm')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add discussion topic')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4628257-7f13-453a-87e9-659258560353",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add discussion topic",
+      "targets": [
+        ["linkText=Add discussion topic", "linkText"],
+        ["css=.navitem > .btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Add discussion topic')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#collapseAddForm')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add discussion topic')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "080cf909-271a-4610-88fa-322da11f7681",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=yui_3_18_1_1_1702112048351_90",
+      "targets": [
+        ["id=yui_3_18_1_1_1702112048351_90", "id"],
+        ["linkText=Add discussion topic", "linkText"],
+        ["css=#yui_3_18_1_1_1702112048351_90", "css:finder"],
+        ["xpath=//a[contains(text(),'Add discussion topic')]", "xpath:link"],
+        ["xpath=//a[@id='yui_3_18_1_1_1702112048351_90']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1702112048351_91']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#collapseAddForm')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add discussion topic')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a8eb310-f6a6-4f27-b11f-6d213448b7f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_buttonar']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "13074af9-4bfb-4a48-814d-4c5949dbf820",
+    "name": "Add Discusstion Topic3",
+    "commands": [{
+      "id": "487d50ae-a603-4781-a244-f575a17bc1ff",
+      "comment": "",
+      "command": "open",
+      "target": "/my/courses.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7dc65b98-8e3e-4208-b3a0-da3d763f5f25",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "904x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb810dee-3d0c-4f5a-a5fa-37e46b671721",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-info-container-69-4 .multiline",
+      "targets": [
+        ["css=#course-info-container-69-4 .multiline", "css:finder"],
+        ["xpath=//div[@id='course-info-container-69-4']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e39c0c1-a67d-4b63-8ed5-541bb0678ba0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#module-967 .aalink",
+      "targets": [
+        ["css=#module-967 .aalink", "css:finder"],
+        ["xpath=//a[@onclick='']", "xpath:attributes"],
+        ["xpath=//li[@id='module-967']/div/div[2]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://school.moodledemo.net/mod/forum/view.php?id=967')])[3]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02007059-e64d-4690-b7a2-b293b26a4f62",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add discussion topic",
+      "targets": [
+        ["linkText=Add discussion topic", "linkText"],
+        ["css=.navitem > .btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Add discussion topic')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#collapseAddForm')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add discussion topic')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea03e6b5-59fa-4b5e-9da8-feda064f863e",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_subject",
+      "targets": [
+        ["id=id_subject", "id"],
+        ["name=subject", "name"],
+        ["css=#id_subject", "css:finder"],
+        ["xpath=//input[@id='id_subject']", "xpath:attributes"],
+        ["xpath=//div[@id='fitem_id_subject']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e77ce4be-8d3b-48d2-ac8b-bd9dae1bde13",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_subject",
+      "targets": [
+        ["id=id_subject", "id"],
+        ["name=subject", "name"],
+        ["css=#id_subject", "css:finder"],
+        ["xpath=//input[@id='id_subject']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1702112085222_99']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "In Moodle, a discussion topic is a forum thread within a course where students and instructors can engage in asynchronous discussions about a specific topic or question. It allows for deeper exploration of concepts, brainstorming of ideas, and collaborative learning.  Here's a breakdown of its functionalities:  Purpose:  Facilitate asynchronous discussions among students and instructors. Encourage critical thinking and deeper understanding of course material. Promote collaborative learning and peer interaction. Provide a space for students to ask questions and seek clarification. Key features:  Forum thread: Each discussion topic is organized as a thread, where users can post their initial thoughts and reply to others' comments. Threaded replies: Users can reply directly to specific posts, creating a clear conversation flow. Moderation tools: Instructors can moderate discussions by deleting inappropriate posts, marking discussions as read, and pinning important messages. Subscription options: Users can choose to be notified of new posts in a discussion topic. Multiple forum types: Different forum types are available, such as Standard forums for open discussions, Q&A forums for asking and answering questions, and Single Simple forums for focused discussions on a single topic. Benefits of using discussion topics:  Promotes active learning: Students are actively engaged in the learning process by contributing to discussions and sharing their thoughts. Enhances understanding: Discussing concepts with peers can help students solidify their understanding and identify areas where they need further clarification. Develops critical thinking skills: Students learn to analyze information, form their own opinions, and defend their arguments through discussions. Improves communication skills: Students practice writing clear and concise messages, and learn to communicate effectively in a respectful and professional manner. Fosters a sense of community: Discussions can create a sense of community within the course, as students connect with their peers and instructors. Overall, discussion topics are a valuable tool in Moodle that can significantly enhance the learning experience for students and instructors.     Bard may display inaccurat"
+    }, {
+      "id": "9fb15977-2c8b-4a05-8f8a-aaf2ccb6f318",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f1ab1cb-0595-4f07-af06-c09ca1a5038e",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23655c7e-76ec-4551-a330-64564121ac2f",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b9e421f-6f11-4f86-b79b-073c457f377d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,340.79998779296875)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b17990f4-0df6-4368-880d-f09aadcc3719",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fa0dd17-ac66-4f6b-a1e7-0fadfd80872d",
+      "comment": "",
+      "command": "editContent",
+      "target": "id=tinymce",
+      "targets": [
+        ["id=tinymce", "id"],
+        ["css=#tinymce", "css:finder"],
+        ["xpath=//body[@id='tinymce']", "xpath:attributes"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": "<div class=\"chat-history-scroll-container ng-tns-c1385467139-2 ng-trigger ng-trigger-resetChat show-bottom-shadow\"><div class=\"conversation-container ng-tns-c1385467139-2 narrow-container ng-star-inserted\"><div class=\"ng-tns-c1187250912-40\"><div class=\"response-container ng-tns-c1832212363-41\"><div class=\"presented-response-container ng-tns-c1832212363-41\"><div class=\"response-container-content ng-tns-c1832212363-41\"><div class=\"response-content ng-trigger ng-trigger-responsePopulation ng-tns-c1832212363-41\"><div class=\"markdown markdown-main-panel\" dir=\"ltr\"><p data-sourcepos=\"1:1-1:183\">In Moodle, a discussion topic is a forum thread within a course where students and instructors can engage in asynchronous discussions about a specific topic or question. It allows for deeper exploration of concepts, brainstorming of ideas, and collaborative learning.</p><p data-sourcepos=\"3:1-3:42\">Here's a breakdown of its functionalities:</p><p data-sourcepos=\"5:1-5:12\"><strong>Purpose:</strong></p><ul data-sourcepos=\"7:1-7:25\"><li data-sourcepos=\"7:1-7:25\">Facilitate asynchronous discussions among students and instructors.</li><li data-sourcepos=\"8:1-8:74\">Encourage critical thinking and deeper understanding of course material.</li><li data-sourcepos=\"9:1-9:54\">Promote collaborative learning and peer interaction.</li><li data-sourcepos=\"10:1-10:17\">Provide a space for students to ask questions and seek clarification.</li></ul><p data-sourcepos=\"12:1-12:17\"><strong>Key features:</strong></p><ul data-sourcepos=\"14:1-14:83\"><li data-sourcepos=\"14:1-14:83\"><strong>Forum thread:</strong>&nbsp;Each discussion topic is organized as a thread,&nbsp;where users can post their initial thoughts and reply to others' comments.</li><li data-sourcepos=\"15:1-15:103\"><strong>Threaded replies:</strong>&nbsp;Users can reply directly to specific posts,&nbsp;creating a clear conversation flow.</li><li data-sourcepos=\"16:1-16:154\"><strong>Moderation tools:</strong>&nbsp;Instructors can moderate discussions by deleting inappropriate posts,&nbsp;marking discussions as read,&nbsp;and pinning important messages.</li><li data-sourcepos=\"17:1-17:95\"><strong>Subscription options:</strong>&nbsp;Users can choose to be notified of new posts in a discussion topic.</li><li data-sourcepos=\"18:1-19:0\"><strong>Multiple forum types:</strong>&nbsp;Different forum types are available,&nbsp;such as Standard forums for open discussions,&nbsp;Q&amp;A forums for asking and answering questions,&nbsp;and Single Simple forums for focused discussions on a single topic.</li></ul><p data-sourcepos=\"20:1-20:37\"><strong>Benefits of using discussion topics:</strong></p><ul data-sourcepos=\"22:1-27:0\"><li data-sourcepos=\"22:1-22:144\"><strong>Promotes active learning:</strong>&nbsp;Students are actively engaged in the learning process by contributing to discussions and sharing their thoughts.</li><li data-sourcepos=\"23:1-23:165\"><strong>Enhances understanding:</strong>&nbsp;Discussing concepts with peers can help students solidify their understanding and identify areas where they need further clarification.</li><li data-sourcepos=\"24:1-24:152\"><strong>Develops critical thinking skills:</strong>&nbsp;Students learn to analyze information,&nbsp;form their own opinions,&nbsp;and defend their arguments through discussions.</li><li data-sourcepos=\"25:1-25:168\"><strong>Improves communication skills:</strong>&nbsp;Students practice writing clear and concise messages,&nbsp;and learn to communicate effectively in a respectful and professional manner.</li><li data-sourcepos=\"26:1-27:0\"><strong>Fosters a sense of community:</strong>&nbsp;Discussions can create a sense of community within the course,&nbsp;as students connect with their peers and instructors.</li></ul><p data-sourcepos=\"28:1-28:145\"><strong>Overall, discussion topics are a valuable tool in Moodle that can significantly enhance the learning experience for students and instructors.</strong></p></div><div class=\"response-footer ng-tns-c1187250912-40 gap complete\"><div class=\"sources-list-container\"><br data-mce-bogus=\"1\"></div></div></div></div></div><div class=\"response-container-footer ng-tns-c1832212363-41\"><div class=\"actions-container-v2 ng-star-inserted\"><div class=\"buttons-container-v2 ng-star-inserted\"><button class=\"mat-mdc-tooltip-trigger icon-button mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base gmat-mdc-button ng-star-inserted\" aria-label=\"Good response\" aria-pressed=\"false\" aria-controls=\"feedback-form-3\"></button><button class=\"mat-mdc-tooltip-trigger icon-button mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base gmat-mdc-button ng-star-inserted\" aria-label=\"Bad response\" aria-pressed=\"false\" aria-controls=\"feedback-form-3\"></button><div class=\"menu-button-wrapper\"><button class=\"mat-mdc-menu-trigger mat-mdc-tooltip-trigger icon-button mdc-button mat-mdc-button gmat-mdc-button-with-prefix mat-unthemed mat-mdc-button-base gmat-mdc-button ng-star-inserted\" aria-label=\"Modify response\" aria-haspopup=\"menu\" aria-expanded=\"false\">tune</button><button class=\"mat-mdc-menu-trigger mat-mdc-tooltip-trigger icon-button mdc-button mat-mdc-button gmat-mdc-button-with-prefix mat-unthemed mat-mdc-button-base gmat-mdc-button ng-star-inserted\" aria-label=\"Share &amp; export\" aria-haspopup=\"menu\" aria-expanded=\"false\">share</button></div><div class=\"menu-button-wrapper ng-star-inserted\"><br data-mce-bogus=\"1\"></div><div class=\"menu-button-wrapper ng-star-inserted\"><button class=\"mat-mdc-menu-trigger mat-mdc-tooltip-trigger icon-button mdc-button mat-mdc-button gmat-mdc-button-with-prefix mat-unthemed mat-mdc-button-base gmat-mdc-button\" aria-label=\"Show more options\" aria-haspopup=\"menu\" aria-expanded=\"false\" aria-describedby=\"cdk-describedby-message-ng-1-14\">more_vert</button></div></div></div></div></div><div id=\"feedback-form-3\" class=\"ng-tns-c1187250912-40\"></div><div id=\"factuality-form-3\" class=\"related-search-footer ng-tns-c1187250912-40 complete\"></div></div><div class=\"restart-chat-button-scroll-placeholder ng-tns-c1385467139-2 ng-star-inserted\"><br data-mce-bogus=\"1\"></div></div></div><div class=\"bottom-container ng-tns-c1385467139-2 narrow-container ng-star-inserted\"><div class=\"input-area-container ng-tns-c1385467139-2\"><div class=\"input-area ng-tns-c3294528854-5\" data-node-type=\"input-area\"><div class=\"image-uploader ng-star-inserted\"><button id=\"upload-local-image-button\" class=\"mat-mdc-tooltip-trigger mdc-icon-button mat-mdc-icon-button gmat-mdc-button-with-prefix mat-unthemed mat-mdc-button-base gmat-mdc-button ng-star-inserted\" aria-label=\"[BACKUP_MESSAGE_ID: 4346501862140223347] Open upload image modal\" aria-describedby=\"cdk-describedby-message-ng-1-6\">add_photo_alternate</button><button class=\"hidden-upload-local-image-button ng-star-inserted\" aria-hidden=\"true\" data-mce-tabindex=\"-1\"></button></div><div class=\"text-input-field ng-tns-c3294528854-5 ng-star-inserted\"><div class=\"text-input-field_textarea-wrapper ng-tns-c3294528854-5\"><div class=\"text-input-field-main-area ng-tns-c3294528854-5\"><div class=\"text-input-field_textarea-inner ng-tns-c3294528854-5\"><div class=\"ql-editor textarea ql-blank\" role=\"textbox\" contenteditable=\"true\" data-gramm=\"false\" aria-multiline=\"true\" aria-label=\"Input for prompt text\" data-placeholder=\"Enter a prompt here\"><p><br></p></div><div class=\"ql-clipboard\" contenteditable=\"true\" data-mce-tabindex=\"-1\"><br data-mce-bogus=\"1\"></div></div></div></div><div>mic</div></div><div class=\"send-button-container ng-tns-c3294528854-5 outer ng-star-inserted\"><button class=\"mat-mdc-tooltip-trigger send-button ng-tns-c3294528854-5 mdc-icon-button mat-mdc-icon-button gmat-mdc-button-with-prefix mat-primary mat-mdc-button-base gmat-mdc-button\" aria-label=\"Send message\" aria-disabled=\"true\" aria-describedby=\"cdk-describedby-message-ng-1-8\">send_spark</button></div></div></div><div class=\"capabilities-disclaimer ng-tns-c1385467139-2 ng-star-inserted\"><p class=\"gmat-caption ng-tns-c1385467139-2\">Bard may display inaccurat</p></div></div>"
+    }, {
+      "id": "0ca315c9-7c91-4838-b49d-286c505c6fde",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "65187354-1ae1-46f5-8ba0-e20014635c92",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_buttonar']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0f7beb5e-0441-4671-a1dc-244ab0556b0e",
+    "name": "Add Discusstion Topic4",
+    "commands": [{
+      "id": "abc4fde0-a3c5-4c6d-babe-72dcc2a67a1c",
+      "comment": "",
+      "command": "open",
+      "target": "/my/courses.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a69f055-27d4-4a46-a61a-b871d37ef03a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "906x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0afbe87c-3b02-4034-9c27-75f5f2b43e28",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-info-container-69-4 .multiline",
+      "targets": [
+        ["css=#course-info-container-69-4 .multiline", "css:finder"],
+        ["xpath=//div[@id='course-info-container-69-4']/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4984f660-bced-4c0d-ab1d-237964f438d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#module-967 .aalink",
+      "targets": [
+        ["css=#module-967 .aalink", "css:finder"],
+        ["xpath=//a[@onclick='']", "xpath:attributes"],
+        ["xpath=//li[@id='module-967']/div/div[2]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://school.moodledemo.net/mod/forum/view.php?id=967')])[3]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68a202d0-c9b8-4294-9fb1-ad103487b09a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Add discussion topic",
+      "targets": [
+        ["linkText=Add discussion topic", "linkText"],
+        ["css=.navitem > .btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Add discussion topic')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#collapseAddForm')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add discussion topic')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a34f82b-022c-4266-a833-d7fcc75799d7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add discussion topic",
+      "targets": [
+        ["linkText=Add discussion topic", "linkText"],
+        ["css=.navitem > .btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Add discussion topic')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#collapseAddForm')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add discussion topic')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bae34bc-1913-47cd-9797-24dbeb7101ee",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=yui_3_18_1_1_1702112253861_94",
+      "targets": [
+        ["id=yui_3_18_1_1_1702112253861_94", "id"],
+        ["linkText=Add discussion topic", "linkText"],
+        ["css=#yui_3_18_1_1_1702112253861_94", "css:finder"],
+        ["xpath=//a[contains(text(),'Add discussion topic')]", "xpath:link"],
+        ["xpath=//a[@id='yui_3_18_1_1_1702112253861_94']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1702112253861_95']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#collapseAddForm')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add discussion topic')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4dc8a0d9-9104-4cf6-8821-1601e91af47e",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_subject",
+      "targets": [
+        ["id=id_subject", "id"],
+        ["name=subject", "name"],
+        ["css=#id_subject", "css:finder"],
+        ["xpath=//input[@id='id_subject']", "xpath:attributes"],
+        ["xpath=//div[@id='fitem_id_subject']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf54ba2c-6b31-4a6c-9a01-53b11835f88c",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_subject",
+      "targets": [
+        ["id=id_subject", "id"],
+        ["name=subject", "name"],
+        ["css=#id_subject", "css:finder"],
+        ["xpath=//input[@id='id_subject']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1702112253861_99']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "B6AddDisscusstionTopic"
+    }, {
+      "id": "197664ba-9eda-4d03-a808-c7030d93f2c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_buttonar']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c11783b-cdad-4e24-8554-da230999d4a7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,218.39999389648438)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ef1b671-5321-4252-b40f-cd27ff729480",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=B6AddDisscusstionTopic",
+      "targets": [
+        ["linkText=B6AddDisscusstionTopic", "linkText"],
+        ["css=.discussion:nth-child(1) .w-100", "css:finder"],
+        ["xpath=//a[contains(text(),'B6AddDisscusstionTopic')]", "xpath:link"],
+        ["xpath=//div[@id='discussion-list-65742c45ccffa65742c45b28e818']/div[3]/div/table/tbody/tr/th/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/mod/forum/discuss.php?d=216')]", "xpath:href"],
+        ["xpath=//th/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'B6AddDisscusstionTopic')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78765a1e-ca5b-485e-8eac-cadbbe62bb8c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "74667742-0f10-4b5b-b4d8-b9f0480fd8bd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://school.moodledemo.net/"],
+  "plugins": []
+}
