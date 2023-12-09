@@ -23,13 +23,13 @@ namespace CO3015_Assignment3.Utility
         public static void Login(IWebDriver driver)
         {
             driver.Navigate().GoToUrl("https://school.moodledemo.net/login/index.php");
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
 
             driver.FindElement(By.Id("username")).SendKeys(UserName);
             driver.FindElement(By.Id("password")).SendKeys(Password);
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
             driver.FindElement(By.Id("loginbtn")).Click();
-            Thread.Sleep(2000);
+            Thread.Sleep(500);
         }
 
         public static string? GetCellDataFromExcelFile(string excelFileName, string cell)

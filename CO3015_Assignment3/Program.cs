@@ -6,7 +6,7 @@ namespace CO3015_Assignment3
     {
         public static void Main(string[] args)
         {
-            B5AddStudent driverB5 = new B5AddStudent();
+            B5TakeQuiz driverB5 = new B5TakeQuiz();
             driverB5.RunTest();
 
         }
